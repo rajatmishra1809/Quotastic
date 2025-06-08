@@ -26,5 +26,5 @@ Quotastic is a simple and elegant **Flask-based** web application that displays 
 1. **Clone the repository:**
 
 ```bash
-git clone https://github.com/yourusername/quotastic.git
-cd quotastic
+git clone https://github.com/rajatmishra1809/Quotastic
+cd Quotastic
