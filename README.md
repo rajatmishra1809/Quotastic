@@ -15,8 +15,8 @@ Quotastic is a simple and elegant **Flask-based** web application that displays 
 
 ## Screenshots
 
-![Light Mode](screenshots/light.png)  
-![Dark Mode](screenshots/dark.png)
+![Light Mode](Quotastic/quotastic/screenshots/light.png)  
+![Dark Mode](Quotastic/quotastic/screenshots/dark.png)
 
 
 ---
