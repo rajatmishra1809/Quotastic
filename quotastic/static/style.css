@@ -1,0 +1,140 @@
+/* Light Mode Styles */
+body {
+  margin: 0;
+  height: 100vh;
+  background: linear-gradient(135deg, #d6e6f2, #f0f7fa);
+  font-family: 'Poppins', sans-serif;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: #4a4a6a;
+}
+
+.container {
+  background: #ffffffcc; /* white with slight transparency */
+  padding: 3rem 4rem;
+  border-radius: 20px;
+  box-shadow:
+    0 10px 30px rgba(100, 100, 150, 0.2),
+    inset 0 0 15px rgba(255, 255, 255, 0.7);
+  max-width: 600px;
+  text-align: center;
+  position: relative;
+  perspective: 1000px;
+  transition: transform 0.5s ease;
+  backdrop-filter: blur(10px);
+}
+
+.quote-text {
+  font-size: 1.8rem;
+  font-weight: 600;
+  line-height: 1.4;
+  margin-bottom: 1.8rem;
+  color: #3b3f72;
+  text-shadow: 0 1px 3px rgba(180, 180, 210, 0.4);
+  transform-style: preserve-3d;
+}
+
+.author {
+  font-size: 1.2rem;
+  font-weight: 500;
+  color: #7d8ca3;
+  margin-bottom: 2.5rem;
+  font-style: italic;
+}
+
+button {
+  background: #a3c1f9;
+  border: none;
+  padding: 0.8rem 2rem;
+  border-radius: 40px;
+  color: #2b3a67;
+  font-size: 1.1rem;
+  cursor: pointer;
+  box-shadow: 0 5px 15px rgba(163, 193, 249, 0.6);
+  transition: background 0.3s ease, box-shadow 0.3s ease;
+  font-weight: 600;
+}
+
+button:hover {
+  background: #7ea6f7;
+  box-shadow: 0 8px 25px rgba(126, 166, 247, 0.9);
+  transform: translateY(-3px);
+}
+
+button:active {
+  transform: translateY(-1px);
+  box-shadow: 0 5px 15px rgba(126, 166, 247, 0.8);
+}
+
+.fade-in {
+  animation: fadeIn 1s ease forwards;
+}
+
+@keyframes fadeIn {
+  from { opacity: 0; transform: translateY(20px);}
+  to { opacity: 1; transform: translateY(0);}
+}
+
+/* Toggle Dark Mode Button Specific Style */
+#toggle-theme {
+  margin-top: 1.5rem;
+  background: #76c7c0;
+  color: #fff;
+  border: none;
+  padding: 0.6rem 1.6rem;
+  border-radius: 30px;
+  cursor: pointer;
+  font-weight: 600;
+  box-shadow: 0 5px 15px rgba(118, 199, 192, 0.6);
+  transition: background 0.3s ease;
+}
+
+#toggle-theme:hover {
+  background: #5ab6ae;
+}
+
+/* Dark Mode Styles */
+body.dark-mode {
+  background: linear-gradient(135deg, #1a1a2e, #16213e);
+  color: #c8d6e5;
+}
+
+body.dark-mode .container {
+  background: #0f1624cc; /* dark translucent */
+  box-shadow:
+    0 10px 30px rgba(0, 0, 0, 0.7),
+    inset 0 0 15px rgba(255, 255, 255, 0.1);
+  backdrop-filter: blur(15px);
+}
+
+body.dark-mode .quote-text {
+  color: #e0e0ff;
+  text-shadow: 0 1px 5px rgba(100, 100, 180, 0.8);
+}
+
+body.dark-mode .author {
+  color: #b0b8d9;
+}
+
+body.dark-mode button {
+  background: #4b3b75;
+  color: #c8d6e5;
+  box-shadow: 0 5px 15px rgba(75, 59, 117, 0.7);
+}
+
+body.dark-mode button:hover {
+  background: #655d99;
+  box-shadow: 0 8px 25px rgba(101, 93, 153, 0.9);
+}
+
+/* Dark mode toggle button overrides */
+body.dark-mode #toggle-theme {
+  background: #99c1ff;
+  color: #16213e;
+  box-shadow: 0 5px 15px rgba(153, 193, 255, 0.7);
+}
+
+body.dark-mode #toggle-theme:hover {
+  background: #7ea6f7;
+}
